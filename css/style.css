@@ -1,0 +1,15 @@
+body{
+    margin:0;
+}
+HEADER{
+    height:100vh ;
+    background-color:#FB7552;
+    text-align: center;
+}
+h1{
+    font-family: "Brush Script MT", cursive;
+}
+div{
+    background-color: #0a53be;
+    height: 100vh;
+}
