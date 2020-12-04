@@ -1,0 +1,22 @@
+fieldset {
+    padding:5px 5px 5px 5px;
+}
+
+.monformulaire {
+    height: 60vh;
+    width: 80vw;
+    margin-top:10vh;
+}
+
+legend {
+    padding:5px 5px 5px 5px;
+}
+
+h4{
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+}
+section {
+    margin-top:5vh;
+}
