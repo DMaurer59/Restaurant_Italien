@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Page reservation</title>
 </head>
 <body>
+<h1>Formulaire de réservation</h1>
 
-</body>
-</html>
+<!--Insertion du formulaire-->
+<form method="post" action="page_reservation_ok.html" id="form-content">
+    <fieldset class="field-content">
+        <legend>Réservation</legend>
+        <p>Nom <label for="nom"></label><input name="nom" value="" id="nom" size="30" minlength="2" maxlength="30" required placeholder="Votre nom"></p>
+        <p>Prénom <label for="prenom"></label><input name="prenom" value="" id="prenom" size="30" minlength="2" maxlength="30" placeholder="Votre prénom" required></p>
+        <p>Votre adresse email
+        <label for="email"></label><input type="email" name="email" value="" id="email" size="40" placeholder="exemple@domaine.com" minlength="2" maxlength="50" required>
+        </p>
+        <p>Personnes :
+        <label for="nbPersonnes"></label><select name="nbPersonnes" id="nbPersonnes" required><option value="">Nombre :</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option></select>
+        </p>
+        <p>Date de réservation <label for="date_reservation"></label><input type="date" id="date_reservation" min="2020-08-20" name="date_reservation" required></p>
+        <p>Horaire souhaité : <label for="horaire"></label>
+        <select name="horaire" id="horaire" required>
+            <option value="">Horaire souhaité :</option>
+            <option value="1">12h00 - 12h30</option>
+            <option value="2">12h30 - 13h00</option>
+            <option value="3">13h00 - 13h30</option>
+            <option value="4">13h30 - 14h00</option><option value="5">19h00 - 19h30</option>
+            <option value="6">19h30 - 20h00</option><option value="7">20h00 - 20h30</option>
+            <option value="8">20h30 - 21h00</option>
+            <option value="9">21h00 - 21h30</option>
+            <option value="10">21h30 - 22h00</option>
+            <option value="11">22h00 - 22h30</option></select>
+        </p>
+        <p><button class="button" type="submit">Valider</button></p>
+    </fieldset>
+</form>
+
+<!--Insertion de l'image du restaurant-->
+<img src="images/restaurant-form.jpg" alt="image" height="640" width="396"/></body>
+
+<!--Insertion de l'image de l'itinairaire-->
+<img src="images/itinéraire.jpg" alt="image" height="341" width="506"/></html>
