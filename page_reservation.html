@@ -1,77 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <!-- inclure le CSS Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/moncss.css">
-    <title>Page reservation</title>
-</head>
-<body>
-<div class="container">
-    <section>
 
-        <h1 class="text-center">Formulaire de réservation<br /></h1>
-        <div class="row monformulaire">
-        <!--Insertion du formulaire-->
-        <form method="post" action="page_reservation_ok.html" id="form-content" class="col-6">
-         <fieldset class="field-content">
-        <legend>Réservation<br /></legend>
-        <p>Nom <label for="nom"></label><input name="nom" value="" id="nom" size="30" minlength="2" maxlength="30" required placeholder="Votre nom"></p>
-        <p>Prénom <label for="prenom"></label><input name="prenom" value="" id="prenom" size="30" minlength="2" maxlength="30" placeholder="Votre prénom" required></p>
-        <p>Votre adresse email
-        <label for="email"></label><input type="email" name="email" value="" id="email" size="36" placeholder="exemple@domaine.com" minlength="2" maxlength="50" required>
-        </p>
-        <p>Personnes :
-        <label for="nbPersonnes"></label>
-            <select name="nbPersonnes" id="nbPersonnes" required><option value="">Nombre :</option>
-                <option value=1>1</option>
-                <option value=2>2</option>
-                <option value=3>3</option>
-                <option value=4>4</option>
-                <option value=5>5</option>
-                <option value=6>6</option>
-                <option value=7>7</option>
-                <option value=8>8</option>
-                <option value=9>9</option>
-                <option value=10>10</option>
-            </select>
-        </p>
-        <p>Date de réservation <label for="date_reservation"></label><input type="date" id="date_reservation" min="2020-08-20" name="date_reservation" required></p>
-        <p>Horaire souhaité : <label for="horaire"></label>
-        <select name="horaire" id="horaire" required>
-            <option value="">Horaire souhaité :</option>
-            <option value="1">12h00 - 12h30</option>
-            <option value="2">12h30 - 13h00</option>
-            <option value="3">13h00 - 13h30</option>
-            <option value="4">13h30 - 14h00</option>
-            <option value="5">19h00 - 19h30</option>
-            <option value="6">19h30 - 20h00</option>
-            <option value="7">20h00 - 20h30</option>
-            <option value="8">20h30 - 21h00</option>
-            <option value="9">21h00 - 21h30</option>
-            <option value="10">21h30 - 22h00</option>
-            <option value="11">22h00 - 22h30</option>
-        </select>
-        </p>
-             <p class="text-center"><button class="button" type="submit">Valider</button></p>
-             <!--Insertion de l'image de l'itinairaire-->
-             <p class="text-center">
-                <img class="img-fluid w-25" src="images/itinéraire.jpg" alt="Plan d'accès"/></p>
-             <h4 class="text-center">Plan d'accès</h4>
-    </fieldset>
-</form>
-            <!--Insertion de l'image du restaurant-->
-            <div class="card card border border-white" style="width: 18vw;height: max-content">
-                <img class="card-img-top" src="images/restaurant-form.jpg" alt="Card image cap">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Restaurant Il Bergam!</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading"><a href="#"><img src="images/logo.png" alt="image"></a></div>
+        <h4>Benvenuto!</h4>
+        <p>Venez découvrir et déguster <br/>nos plats faits maison !</p>
+        <p>Buon appetito</p>
+        <div class="list-group list-group-flush ">
+            <a href="index.html">Accueil</a>
+            <a href="">Carte</a>
+            <a href="#">Réserver</a>
+        </div>
+        <h5>Adresse</h5>
+        <p>666 rue de la Faim</p>
+        <p>59500 Douai</p>
+        <h5>Horaires</h5>
+        <p>Tous les jours</p>
+        <p>12h-14h30</p>
+        <p>19h-23h</p>
+
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="btn btn" id="menu-toggle">Menu</button>
+        </nav>
+
+        <div class="container-fluid">
+            <!--  Section, modif içi -->
+            <h1>Formulaire de réservation<br /></h1>
+            <div class="row monformulaire">
+                <!--Insertion du formulaire-->
+                <form method="post" action="page_reservation_ok.html" id="form-content" class="col-6">
+                    <fieldset class="field-content"><legend>Réservation<br /></legend>
+                        <p class="pform">Nom <label for="nom"></label><input name="nom" value="" id="nom" size="33" minlength="2" maxlength="30" required placeholder="Votre nom"></p>
+                        <p class="pform">Prénom <label for="prenom"></label><input name="prenom" value="" id="prenom" size="30" minlength="2" maxlength="30" placeholder="Votre prénom" required></p>
+                        <p class="pform">Votre adresse email
+                            <label for="email"></label><input type="email" name="email" value="" id="email" size="36" placeholder="exemple@domaine.com" minlength="2" maxlength="50" required>
+                        </p>
+                        <p class="pform">Personnes :
+                            <label for="nbPersonnes"></label>
+                            <select name="nbPersonnes" id="nbPersonnes" required><option value="">Nombre :</option>
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                            </select>
+                        </p>
+                        <p class="pform">Date de réservation <label for="date_reservation"></label><input type="date" id="date_reservation" min="2020-08-20" name="date_reservation" required></p>
+                        <p class="pform">Horaire souhaité : <label for="horaire"></label>
+                            <select name="horaire" id="horaire" required>
+                                <option value="">Horaire souhaité :</option>
+                                <option value="1">12h00 - 12h30</option>
+                                <option value="2">12h30 - 13h00</option>
+                                <option value="3">13h00 - 13h30</option>
+                                <option value="4">13h30 - 14h00</option>
+                                <option value="5">19h00 - 19h30</option>
+                                <option value="6">19h30 - 20h00</option>
+                                <option value="7">20h00 - 20h30</option>
+                                <option value="8">20h30 - 21h00</option>
+                                <option value="9">21h00 - 21h30</option>
+                                <option value="10">21h30 - 22h00</option>
+                                <option value="11">22h00 - 22h30</option>
+                            </select>
+                        </p>
+                        <p class="pform"></p>
+                        <p class="text-center"><button class="button" type="submit">Valider</button></p>
+                        <p class="pform"></p>
+                        <!--Insertion de l'image de l'itinairaire-->
+                        <p class="text-center align-middle">
+                            <img class="img-fluid w-25" src="images/itinéraire.jpg" alt="Plan d'accès"/></p>
+                        <h4 class="text-center">Plan d'accès</h4>
+                    </fieldset>
+                </form>
+                <!--Insertion de l'image du restaurant-->
+                <div class="card card border border-dark text-center" style="width: 18vw;height: max-content">
+                    <img class="card-img-top" src="images/restaurant-form.jpg" alt="Card image cap">
+                </div>
             </div>
         </div>
+    </div>
+    <!-- /#page-content-wrapper -->
 
-</section>
 </div>
 
-<!--inclure les scripts JS en fin de body pour améliorer le chargement des pages -->
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+
+<MAIN class="col-lg-10">
+
+
+</MAIN>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </html>
+
+<!--delphine-->

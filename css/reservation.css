@@ -3,9 +3,22 @@ fieldset {
 }
 
 .monformulaire {
-    height: 60vh;
-    width: 80vw;
-    margin-top:10vh;
+    height: 40vh;
+    width: 90vw;
+    margin-top:3vh;
+    margin-left:0;
+    text-align: left;
+}
+.macard {
+    margin-top:0;
+}
+
+@media (min-width : 769px) {
+    .monformulaire {
+        margin-left: 10vw;
+        margin-top:10vh;
+        width: 80vw;
+    }
 }
 
 legend {
@@ -20,3 +33,13 @@ h4{
 section {
     margin-top:5vh;
 }
+h1{
+    text-align: center;
+    font-family: Parisienne, cursive;
+}
+
+.pform{
+    text-align: left;
+    padding:10px 10px 10px 10px;
+}
+
