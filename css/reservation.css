@@ -1,6 +1,7 @@
 fieldset {
     padding:5px 5px 5px 5px;
 }
+
 .monformulaire {
     height: 40vh;
     width: 90vw;
@@ -11,12 +12,20 @@ fieldset {
 .macard {
     margin-top:0;
 }
-@media (min-width : 769px) {
+
+@media (min-width : 300px) {
     .monformulaire {
         margin-left: 10vw;
         margin-top:10vh;
         width: 80vw;
     }
+
+    @media (max-width: 370px) {
+        #img_rest {
+            display: none;
+        }
+    }
+
 }
 legend {
     padding:5px 5px 5px 5px;
@@ -30,7 +39,7 @@ h4{
 section {
     margin-top:5vh;
 }
-h1 {
+h1{
     text-align: center;
     font-family: Parisienne, cursive;
     padding-top: 20px;
@@ -39,8 +48,4 @@ h1 {
 .pform{
     text-align: left;
     padding:10px 10px 10px 10px;
-}
-
-#img_rest {
-    display: none;
 }
