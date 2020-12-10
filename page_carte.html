@@ -17,7 +17,7 @@
 <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
     <div class="border-right"  id="sidebar-wrapper">
-        <div class="sidebar-heading"><a href="#"><img alt="logo" src="images/logo.png"></a></div>
+        <div class="sidebar-heading"><a href="index.html"><img alt="logo" src="images/logo.png"></a></div>
         <h4>Benvenuto!</h4>
         <p>Venez découvrir et déguster <br/>nos plats faits maison !</p>
         <p>Buon appetito</p>
@@ -37,7 +37,7 @@
     </div>
     <!-- /#sidebar-wrapper -->
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" >
         <nav  class="navbar navbar-expand-lg nav1">
             <button class="btn" id="menu-toggle">Menu</button>
                 <ul class="breadcrumb">
@@ -45,52 +45,107 @@
                     <li class="breadcrumb-item" aria-current="page">Carte</li>
                 </ul>
         </nav>
-        <div id="menu" class="jumbotron-fluid mx-auto border-dark">
-            <ul class="nav nav-tabs" style="background-color: #F29F8F ; border-radius:8px">
+        <div id="menu" class="container-fluid mx-auto border-dark">
+            <ul class="nav nav-tabs justify-content-center mx-auto" style="background-color: #F29F8F ; border-radius:8px ; width:70vw">
                 <li class="active"><a class="liens" data-toggle="tab" href="#entrees">Entrées</a></li>
-                <li><a class="liens" data-toggle="tab" href="#plats">Plats</a></li>
-                <li><a class="liens" data-toggle="tab" href="#desserts">Desserts</a></li>
-                <li><a class="liens" data-toggle="tab" href="#menus">Menus</a></li>
+                <li><a class="liens" style="margin-left: 10px;" data-toggle="tab" href="#plats">Plats</a></li>
+                <li><a class="liens" style="margin-left: 10px;"  data-toggle="tab" href="#desserts">Desserts</a></li>
+                <li><a class="liens" style="margin-left: 10px;" data-toggle="tab" href="#menus">Menus</a></li>
             </ul>
 
-            <div class="tab-content col-sm-12">
+            <div class="tab-content justify-content-center">
+
                 <div id="entrees" class="tab-pane fade show active">
-                    <div class="card mx-auto" style="width: 40vw;margin-top:10px">
-                        <h3 style="text-align: center">Carpaccio de boeuf</h3>
-                        <img class="card-img-top img-fluid" src="images/carpaccio-777850_640.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Prix : 5euros</p>
+                    <div id="carouselentree" class="carousel slide mx-auto" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h5>Carpaccio de boeuf</h5>
+                                <img  src="images/carpaccio-777850_640.jpg" style="width: 100%" class="image1 img-fluid" alt="carpaccio">
+                                <p>Prix : 5euros</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h5>Sfincione</h5>
+                                <img src="images/sfincione.jpg" class="image1 img-fluid" style="width: 100%" alt="sfincione">
+                                <p>Prix : 5euros</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h5>Bruschetta tomates mozza</h5>
+                                <img src="images/bruschetta.jpg" class="image1 img-fluid" style="width: 100%" alt="bruschetta">
+                                <p>Prix : 5euros</p>
+                            </div>
                         </div>
+                        <a class="carousel-control-prev" href="#carouselentree" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bout" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselentree" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bout" aria-hidden="true"></span>
+                        </a>
                     </div>
                 </div>
-                <div id="plats" class="tab-pane fade">
-                    <div class="card mx-auto " style="width: 40vw;margin-top:10px">
-                        <h3 style="text-align: center">Pasta Carbonara</h3>
-                        <img class="card-img-top img-fluid" src="images/pasta-712664_640.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Prix : 15euros</p>
+                <div id="plats" class="tab-pane fade ">
+                    <div id="carouselplats" class="carousel slide mx-auto" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h5>Pasta Carbonara</h5>
+                                <img  src="images/pasta-712664_640.jpg" style="width: 100%" class="image1 img-fluid" alt="carbonara">
+                                <p>Prix : 14euros</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h5>Pizza 3 Fromages</h5>
+                                <img src="images/pizza.jpg" class="image1 img-fluid" style="width: 100%" alt="pizza">
+                                <p>Prix : 12euros</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h5>Osso buco</h5>
+                                <img src="images/osso%20buco.jpg" class="image1 img-fluid" style="width: 100%" alt="osso buco">
+                                <p>Prix : 16euros</p>
+                            </div>
                         </div>
+                        <a class="carousel-control-prev" href="#carouselplats" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bout" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselplats" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bout" aria-hidden="true"></span>
+                        </a>
                     </div>
                 </div>
                 <div id="desserts" class="tab-pane fade">
-                    <div class="card mx-auto" style="width: 40vw;margin-top:10px">
-                        <h3 style="text-align: center">Pana cotta à la fraise</h3>
-                        <img class="card-img-top img-fluid" src="images/dessert-1373820_640.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Prix : 4euros</p>
+                    <div id="carouseldessert" class="carousel slide mx-auto" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h5>Panna cota à la fraise</h5>
+                                <img  src="images/dessert-1373820_640.jpg" style="width: 100%" class="image1 img-fluid" alt="panna cota">
+                                <p>Prix : 5euros</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h5>Tiramisu</h5>
+                                <img src="images/tiramisu.jpg" class="image1 img-fluid" style="width: 100%" alt="tiramisu">
+                                <p>Prix : 5euros</p>
+                            </div>
+                            <div class="carousel-item">
+                                <h5>Zuccotto</h5>
+                                <img src="images/zucotto.jpg" class="image1 img-fluid" style="width: 100%" alt="zuccotto">
+                                <p>Prix : 5euros</p>
+                            </div>
                         </div>
+                        <a class="carousel-control-prev" href="#carouseldessert" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bout" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouseldessert" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bout" aria-hidden="true"></span>
+                        </a>
+                    </div>
                     </div>
                 </div>
                 <div id="menus" class="tab-pane fade">
-                    <div class="card mx-auto" style="width: 40vw;margin-top:10px">
-                        <h3 style="text-align: center">Menus</h3>
+                    <div class="card justify-content-center">
                         <div class="card-body">
-                            <p class="card-text">Menu découverte (entrée/plat/dessert) : 25euros</p>
-                            <p class="card-text">Menu express (entrée/plat ou plat/dessert) : 30euros</p>
+                            <h3>Menus</h3>
+                            <p>Menu découverte (entrée/plat/dessert) : 25euros</p>
+                            <p>Menu découverte (entrée/plat ou plat/dessert) : 20euros</p>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
     </div>
     </div>
