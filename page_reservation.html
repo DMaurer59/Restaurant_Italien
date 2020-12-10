@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Restaurant Il Bergam!</title>
@@ -32,6 +31,7 @@
         <p>Tous les jours</p>
         <p>12h-14h30</p>
         <p>19h-23h</p>
+
     </div>
     <!-- /#sidebar-wrapper -->
     <!-- Page Content -->
@@ -42,10 +42,12 @@
 
         <div class="container-fluid">
             <!--  Section, modif içi -->
-            <h1>Formulaire de réservation<br /></h1>
-            <div class="row monformulaire">
+
+            <h1 class="row text-center mb-5 d-flex justify-content-center">Formulaire de réservation</h1>
+
+            <div class="row d-flex align-items-center justify-content-center">
                 <!--Insertion du formulaire-->
-                <form method="post" action="page_reservation_ok.html" id="form-content" class="col-6">
+                <form method="post" action="page_reservation_ok.html" id="form-content" class="col-sm-4">
                     <fieldset class="field-content"><legend>Réservation<br /></legend>
                         <div class="form-group">
                             Nom <label for="nom"></label>
@@ -58,7 +60,7 @@
                         <div class="form-group">
                             <!--Votre adresse email <label for="email"></label><input type="email" name="email" value="" id="email" placeholder="exemple@domaine.com" minlength="2" maxlength="50" required>-->
                             <label for="exampleInputEmail1">Votre adresse email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrez votre adresse mail">
+                            <input type="email" class="form-control" id="exampleInputEmail1" size="40" placeholder="Entrez votre adresse mail">
                         </div>
 
                         <div class="form-group">
@@ -81,7 +83,7 @@
                             <input type="date" id="date_reservation" class="form-control" min="2020-08-20" name="date_reservation" required>
                         </div>
                         <div class="form-group">
-                            Horaire souhaité : <label for="horaire"></label>
+                            Horaire souhaité<label for="horaire"></label>
                             <select name="horaire" id="horaire" required>
                                 <option value="">Horaire souhaité :</option>
                                 <option value="1">12h00 - 12h30</option>
@@ -100,14 +102,15 @@
                         <p class="pform"></p>
                         <p class="text-center"><button class="button" type="submit">Valider</button></p>
                         <p class="pform"></p>
-                        <!--Insertion de l'image de l'itinairaire-->
+                        <!--Insertion de l'image de l'itinéraire-->
                         <p class="text-center align-middle">
                             <img class="img-fluid w-25" src="images/itinéraire.jpg" alt="Plan d'accès"/></p>
                         <h4 class="text-center">Plan d'accès</h4>
                     </fieldset>
                 </form>
+
                 <!--Insertion de l'image du restaurant-->
-                <div class="card card border border-dark text-center" id="img_rest" style="width: 18vw;height: max-content">
+                <div class="card card border border-dark" id="img_rest" style="width: 18vw;height: max-content">
                     <img class="card-img-top" src="images/restaurant-form.jpg" alt="Card image cap">
                 </div>
             </div>
@@ -116,6 +119,8 @@
     <!-- /#page-content-wrapper -->
 
 </div>
+
+
 <!-- /#wrapper -->
 
 <!-- Bootstrap core JavaScript -->
@@ -130,11 +135,16 @@
         $("#wrapper").toggleClass("toggled");
     });
 </script>
+
+
 <MAIN class="col-lg-10">
 
 </MAIN>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </html>
-<!--modif delphine -->
+
+<!--delphine -->
