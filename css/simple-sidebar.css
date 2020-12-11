@@ -100,7 +100,7 @@ h4,h5{
 .breadcrumb {
   font-size: 13px;
   height: 5vh;
-  width : 10vw;
+  width : 15vw;
   align-content: center;
   margin-top:2.5vh;
   text-decoration: none;
@@ -117,7 +117,7 @@ h4,h5{
 
 @media only screen and (max-width: 380px) {
   .breadcrumb{
-    width:40vw;
+    width:45vw;
   }
   .carousel{
     height:200px;
