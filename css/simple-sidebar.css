@@ -7,7 +7,7 @@
 #wrapper {
   overflow-x: hidden;
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 p{
   margin:0;
@@ -19,7 +19,7 @@ h4,h5{
   text-align: center ;
 }
 #sidebar-wrapper {
-  min-height: 100vh;
+  height: 100vh;
   margin-left: -15rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
@@ -85,10 +85,7 @@ h4,h5{
   width: 100%;
   height: 600px;
 }
-.image1{
-  width: 80%;
-  height:400px;
-}
+
 #carouselentree, #carouselplats , #carouseldessert {
   height: 500px;
   width: 60%;
