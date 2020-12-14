@@ -111,11 +111,12 @@
   .breadcrumb {
     font-size: 13px;
     height: 5vh;
-    width: 14vw;
+    width: 30vw;
     align-content: center;
     margin-top: 2.5vh;
     text-decoration: none;
     color: black;
+    background-color:#076A67 ;
   }
 
   .tab-content {
@@ -131,6 +132,7 @@
   @media only screen and (max-width: 380px) {
     .breadcrumb {
       width: 45vw;
+      text-align: end;
     }
 
     .carousel {
