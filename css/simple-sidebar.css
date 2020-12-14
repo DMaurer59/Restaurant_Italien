@@ -88,7 +88,7 @@ h4,h5{
 
 #carouselentree, #carouselplats , #carouseldessert {
   height: 500px;
-  width: 60%;
+  width: 50%;
 }
 .nav1{
   background-color: #076A67;
@@ -112,7 +112,6 @@ h4,h5{
   width: 90vw;
   height: 80vh;
 }
-
 @media only screen and (max-width: 380px) {
   .breadcrumb{
     width:45vw;
