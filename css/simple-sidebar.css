@@ -3,7 +3,7 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-@media (min-width: 1024px) {
+
   #wrapper {
     overflow-x: hidden;
     height: 100%;
@@ -162,4 +162,3 @@
       height: 250px;
     }
   }
-}
