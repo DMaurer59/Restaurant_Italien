@@ -6,6 +6,7 @@
 
   #wrapper {
     overflow-x: hidden;
+    overflow-y:hidden;
     height: 100%;
     width: 100%;
   }
@@ -131,8 +132,8 @@
 
   @media only screen and (max-width: 380px) {
     .breadcrumb {
-      width: 45vw;
-      text-align: end;
+      width: 60vw;
+      justify-content: end;
     }
 
     .carousel {
