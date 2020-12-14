@@ -1,0 +1,16 @@
+body{
+    margin:0;
+}
+#sidebarMenu{
+    height:100vh ;
+    background-color:#FB7552;
+    text-align: center;
+    font-family: Parisienne, cursive;
+}
+p{
+    font-family: "Arial Black",sans-serif;
+}
+MAIN{
+    background-color: #0a53be;
+    height: 100vh;
+}
