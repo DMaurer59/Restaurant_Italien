@@ -3,7 +3,10 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-
+body{
+  background-image: url("../images/fond-noel.jpg");
+  background-size: cover;
+}
   #wrapper {
     overflow-x: hidden;
     overflow-y:hidden;
@@ -29,7 +32,7 @@
     -moz-transition: margin .25s ease-out;
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;
-    background-color: #FB7756;
+    background-color: #ED2626;
   }
 
   #sidebar-wrapper .sidebar-heading {
@@ -104,7 +107,7 @@
   }
 
   .nav1 {
-    background-color: #076A67;
+    background-color: #095228;
     height: 8vh;
     align-content: center;
   }
@@ -117,7 +120,7 @@
     margin-top: 2.5vh;
     text-decoration: none;
     color: black;
-    background-color:#076A67 ;
+    background-color:#095228 ;
   }
 
   .tab-content {
@@ -163,5 +166,8 @@
 
     .image1 {
       height: 250px;
+    }
+    .neige{
+      display: none;
     }
   }
